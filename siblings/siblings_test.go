@@ -1,6 +1,7 @@
 package siblings_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/StabbyCutyou/quiz/siblings"
@@ -26,15 +27,19 @@ func ExampleSayHi_second() {
 }
 
 // This will be compiled, and ran, failing because outputs don't match!
-func ExampleSayHi_third() {
+func xExampleSayHi_third() {
 	siblings.SayHi()
 	// Output: We are the four Siblings of Go Testing!
 }
 
 func ExampleSibling_Name() {
-
+	s := siblings.Sibling{Name: "Benchy"}
+	fmt.Println(s.Name)
+	// Output: Benchy
 }
 
 func ExampleSibling_Fight() {
-
+	s := siblings.Sibling{Name: "Examy"}
+	s.Fight()
+	// Output: Fighting isnt very nice
 }

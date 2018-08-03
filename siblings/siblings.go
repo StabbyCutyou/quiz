@@ -10,7 +10,7 @@ type Sibling struct {
 
 // Fight has no return value, because nothing ever comes from fighting
 func (s *Sibling) Fight() {
-
+	fmt.Println("Fighting isnt very nice")
 }
 
 // SayHi will have the package announce itself
